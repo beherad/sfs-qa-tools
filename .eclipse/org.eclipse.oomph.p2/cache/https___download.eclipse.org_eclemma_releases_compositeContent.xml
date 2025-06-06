@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?compositeMetadataRepository version='1.0.0'?>
+<repository name='Eclipse EclEmma Releases'
+    type='org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository' version='1.0.0'>
+  <properties size='1'>
+    <property name='p2.timestamp' value='1718050661748'/>
+  </properties>
+  <children size='2'>
+    <child location='https://download.eclipse.org/eclemma/releases/3.1.7/'/>
+    <child location='https://download.eclipse.org/eclemma/releases/3.1.8/'/>
+    <child location='https://download.eclipse.org/eclemma/releases/3.1.9/'/>
+  </children>
+</repository>

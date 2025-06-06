@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.epam.reportportal</groupId>
+  <artifactId>agent-java-junit</artifactId>
+  <version>5.2.0</version>
+  <name>agent-java-junit</name>
+  <description>ReportPortal JUnit 4 client</description>
+  <dependencies>
+    <dependency>
+      <groupId>com.epam.reportportal</groupId>
+      <artifactId>client-java</artifactId>
+      <version>5.2.1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.epam.reportportal</groupId>
+      <artifactId>commons-model</artifactId>
+      <version>5.0.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.nordstrom.tools</groupId>
+      <artifactId>junit-foundation</artifactId>
+      <version>17.0.3</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.google.code.findbugs</groupId>
+      <artifactId>jsr305</artifactId>
+      <version>3.0.2</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>2.0.7</version>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
+  <url>https://github.com/reportportal/agent-java-junit</url>
+  <packaging>jar</packaging>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <name>EPAM Systems</name>
+      <email>support@reportportal.io</email>
+      <organization>ReportPortal.io</organization>
+      <organizationUrl>http://www.reportportal.io</organizationUrl>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:https://github.com/reportportal/agent-java-junit.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com:reportportal/agent-java-junit.git</developerConnection>
+    <url>https://github.com/reportportal/agent-java-junit/tree/master</url>
+  </scm>
+</project>

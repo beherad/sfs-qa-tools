@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.epam.reportportal</groupId>
+  <artifactId>logger-java-log4j</artifactId>
+  <version>5.2.0</version>
+  <name>logger-java-log4j</name>
+  <description>EPAM Report portal. Log4j Integration</description>
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+      <version>2.17.2</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.epam.reportportal</groupId>
+      <artifactId>client-java</artifactId>
+      <version>5.2.0</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.epam.reportportal</groupId>
+      <artifactId>commons-model</artifactId>
+      <version>5.0.0</version>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
+  <url>https://github.com/reportportal/logger-java-log4j</url>
+  <packaging>jar</packaging>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <name>EPAM Systems</name>
+      <email>support@reportportal.io</email>
+      <organization>ReportPortal.io</organization>
+      <organizationUrl>http://www.reportportal.io</organizationUrl>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:https://github.com/reportportal/logger-java-log4j.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com:reportportal/logger-java-log4j.git</developerConnection>
+    <url>https://github.com/reportportal/logger-java-log4j/tree/master</url>
+  </scm>
+</project>

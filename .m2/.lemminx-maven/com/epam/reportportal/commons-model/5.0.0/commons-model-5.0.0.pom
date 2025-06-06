@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.epam.reportportal</groupId>
+  <artifactId>commons-model</artifactId>
+  <version>5.0.0</version>
+  <packaging>jar</packaging>
+  <name>commons-model</name>
+  <description>ReportPortal. REST API Model</description>
+  <url>https://github.com/reportportal/commons-model</url>
+  <dependencies>
+    <dependency>
+      <groupId>io.swagger</groupId>
+      <artifactId>swagger-annotations</artifactId>
+      <version>1.5.24</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.10.1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.validation</groupId>
+      <artifactId>validation-api</artifactId>
+      <version>2.0.1.Final</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.9</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+  <developers>
+    <developer>
+      <name>EPAM Systems</name>
+      <email>support@reportportal.io</email>
+      <organization>ReportPortal.io</organization>
+      <organizationUrl>http://www.reportportal.io</organizationUrl>
+    </developer>
+  </developers>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+  <scm>
+    <connection>scm:git:https://github.com/reportportal/commons-model.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com:reportportal/commons-model.git</developerConnection>
+    <url>https://github.com/reportportal/commons-model/tree/master</url>
+  </scm>
+</project>
