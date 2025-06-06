@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="API Sanity Suite">
+    <test name="API Sanity Test" thread-count="10" parallel="classes">
+<!--        <method-selectors>-->
+<!--            <method-selector>-->
+<!--                <script language="beanshell">-->
+<!--                    <![CDATA[-->
+<!--                    whatGroup = System.getProperty("groupToRun");-->
+<!--                    groups.containsKey(whatGroup);-->
+<!--                    ]]>-->
+<!--                </script>-->
+<!--            </method-selector>-->
+<!--        </method-selectors>-->
+        <groups>
+            <run>
+                <include name="sanity"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="com.sfs.project.emp.api.testcases.*"/>
+        </packages>
+    </test>
+</suite>

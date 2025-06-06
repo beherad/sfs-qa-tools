@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+    <Properties>
+        <Property name="LOG_PATTERN">%d{yyyy-MM-dd HH:mm:ss} [%t] %-5p(%F:%L) [%c{1}] %m  <!--&gt;>  (%F:%L) %C-->%n</Property>
+        <Property name="TARGET_PATH">./target/logs</Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT" follow="true">
+            <ImmediateFlush>true</ImmediateFlush>
+            <PatternLayout pattern="${LOG_PATTERN}" />
+        </Console>
+
+        <Async name="async" bufferSize="500">
+            <AppenderRef ref="console" />
+        </Async>
+
+        <RollingFile name="logfile" fileName="${TARGET_PATH}/consoleLogs.log"
+                     filePattern="${TARGET_PATH}/consoleLogs-%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="1"/>
+        </RollingFile>
+
+        <RollingFile name="htmlreport" fileName="${TARGET_PATH}/consoleLogs.html"
+                     filePattern="${TARGET_PATH}/consoleLogs-%d{yyyy-MM-dd}.html">
+            <HTMLLayout charset="UTF-8" title="HTML Report" locationInfo="true" />
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10 MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="1"/>
+        </RollingFile>
+        <ExtentReportsLog4j2Appender name="extentreport">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </ExtentReportsLog4j2Appender>
+
+    </Appenders>
+    <Loggers>
+        <Logger name="org.springframework" level="OFF">
+            <AppenderRef ref="console" />
+        </Logger>
+        <Logger name="org.springframework.beans.factory.xml" level="OFF">
+            <AppenderRef ref="console" />
+        </Logger>
+        <Logger name="httpclient.wire" level="OFF">
+            <AppenderRef ref="console" />
+        </Logger>
+        <Logger name="org.apache" level="WARN">
+            <AppenderRef ref="console" />
+        </Logger>
+        <Logger name="org.apache.http" level="ERROR">
+            <AppenderRef ref="console" />
+        </Logger>
+        <Logger name="org.apache.http.wire" level="ERROR">
+            <AppenderRef ref="console" />
+        </Logger>
+        <Logger name="org.apache.commons.httpclient" level="ERROR">
+            <AppenderRef ref="console" />
+        </Logger>
+        <Logger name="com.epam.reportportal" level="DEBUG" additivity="false">
+            <AppenderRef ref="Console"/>
+        </Logger>
+
+        <Root level="INFO">
+            <AppenderRef ref="console" />
+            <AppenderRef ref="logfile" />
+            <AppenderRef ref="extentreport" />
+            <!--<AppenderRef ref="htmlreport" />-->
+        </Root>
+    </Loggers>
+</Configuration>

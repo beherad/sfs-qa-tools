@@ -1,0 +1,12 @@
+{
+  "users": {
+    "user1": {
+		"userName": "monalisa behera",
+		"password": "sfsAdmin"
+	},
+	"user2": {
+		"userName": "monalisa behera",
+		"password": "sfsAdmin"
+	}
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "users": {
+    "Emp": {
+      "qa user": "driver_Name",
+      "users": {
+        "eco_1": {
+          "userName": "eco1@edriving.com",
+          "password": "indiadevQA^01"
+        },
+    "driverhq": {
+      "qa user": "admin_Name",
+      "users": {
+        "user1": {
+          "userName": "basapur.sri@solera.com",
+          "password": "Indiaqa@00",
+        }
+      }
+    }
+  }
+}
